@@ -12,5 +12,5 @@ text= ""
 #Insert voice model Ex: weight_d12c6mztpdcejj7g8maqfb4ja
 voice_id= ""
 
-#add directory in front of fakeyou.wav
+#add directory in front of fakeyou.wav Ex: /home/user/fakeyou.wav
 fy.say(text, voice_id).save("fakeyou.wav")
