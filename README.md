@@ -15,6 +15,7 @@ This library is cross-platform and can be run anywhere. However, it's recommende
 3. Click see more details
 4. Examine the url for the model id 
 https://fakeyou.com/weight/weight_34vt3stah9xyts72zrya85vc9
+```
 Model id: weight_34vt3stah9xyts72zrya85vc9
 
 ## Documentation
