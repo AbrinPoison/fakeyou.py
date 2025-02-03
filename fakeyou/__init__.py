@@ -2,7 +2,7 @@ __title__ = "fakeyou.py"
 __author__ = "Shards-7"
 __license__ = "GNU"
 __copyright__ = "Copyright 2025 Shards"
-__version__ = "1.2.5"
+__version__ = "1.3.0"
 
 from requests import get
 

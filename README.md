@@ -1,5 +1,5 @@
 # FakeYou.py
-FakeYou.py is a Python library that allows you to interact with the FakeYou.com API easily. The current version is 1.2.0, which is a beta version for 2.0.0. If you encounter any issues, please report them by opening an issue on the GitHub repository or by contacting me or any of the contributors directly.
+FakeYou.py is a Python library that allows you to interact with the FakeYou.com API easily. The current version is 1.3.0, which is a beta version for 2.0.0. If you encounter any issues, please report them by opening an issue on the GitHub repository or by contacting me or any of the contributors directly.
 
 ## Installation
 To install the library, run this command:
