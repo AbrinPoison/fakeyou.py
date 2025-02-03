@@ -10,7 +10,7 @@ login = fy.login("< email >", "< password >")
 print("Logged in as:", login.username)
 
 # Call the list_voices method and await the result
-voices = fy.get_voices()
+voices = fy.list_voices()
 
 # Print the title number and title of each voice
 for i, title in enumerate(voices.title):
