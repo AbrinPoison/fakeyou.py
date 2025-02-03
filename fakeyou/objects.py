@@ -124,7 +124,7 @@ class wav():
 		self.status=json["status"]
 		self.resultToken=json["maybe_result_token"]
 		if json["maybe_public_bucket_wav_audio_path"] != None:
-			self.link=self.link="https://storage.googleapis.com/vocodes-public"+str(json["maybe_public_bucket_wav_audio_path"])
+			self.link=self.link="https://cdn-2.fakeyou.com/"+str(json["maybe_public_bucket_wav_audio_path"])
 		else:
 			self.link=None
 		self.title=json["title"]
@@ -378,9 +378,9 @@ class _w2l_templates():
 			self.height.append(data["frame_height"])
 			self.duration.append(data["duration_millis"])
 			if data["maybe_image_object_name"]:
-				self.previewUrl.append("https://storage.googleapis.com/vocodes-public"+str(data["maybe_image_object_name"]))
+				self.previewUrl.append("https://cdn-2.fakeyou.com/"+str(data["maybe_image_object_name"]))
 			elif data["maybe_video_object_name"]:
-				self.previewUrl.append("https://storage.googleapis.com/vocodes-public"+data["maybe_video_object_name"])
+				self.previewUrl.append("https://cdn-2.fakeyou.com/"+data["maybe_video_object_name"])
 			self.isPublicListingApproved.append(data["is_public_listing_approved"])
 			self.created_date.append(data["created_at"])
 			self.updated_date.append(data["updated_at"])
@@ -442,7 +442,7 @@ class w2lo():
 		self.maybeStatusDescription=ij["maybe_extra_status_description"]
 		self.attemptCount=ij["attempt_count"]
 		self.resultToken=ij["maybe_result_token"]
-		self.link="https://storage.googleapis.com/vocodes-public"+str(ij["maybe_public_bucket_video_path"])
+		self.link="https://cdn-2.fakeyou.com/"+str(ij["maybe_public_bucket_video_path"])
 		self.maybeW2lTemplateToken=ij["maybe_w2l_template_token"]
 		self.w2lTemplateType=ij["w2l_template_type"]
 		self.title=ij["title"]

@@ -268,7 +268,7 @@ class AsyncFakeYou:
 
                     if state == "complete_success":
                         get_w2l_content = await session.get(
-                            "https://storage.googleapis.com/vocodes-public" +
+                            "https://cdn-2.fakeyou.com/" +
                             str(pjs["state"]["maybe_public_bucket_video_path"])
                         )
                         content = get_w2l_content.content
