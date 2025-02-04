@@ -135,8 +135,9 @@ class AsyncFakeYou:
                         elif "complete_success" == wavo.status:
                             if wavo.link:
                                 async with session.get(wavo.link) as rcontent:
+                                    wav_bytes = await rcontent.read()
                                     del wavo
-                                    return Wav(hjson, rcontent)
+                                    return Wav(hjson, wav_bytes)
                             else:
                                 raise PathNullError()
                     elif handler.status == 429:
@@ -268,7 +269,7 @@ class AsyncFakeYou:
 
                     if state == "complete_success":
                         get_w2l_content = await session.get(
-                            "https://cdn-2.fakeyou.com/" +
+                            "https://cdn-2.fakeyou.com" +
                             str(pjs["state"]["maybe_public_bucket_video_path"])
                         )
                         content = get_w2l_content.content

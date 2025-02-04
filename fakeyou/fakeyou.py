@@ -136,7 +136,7 @@ class FakeYou(Service):
 
             if state == "complete_success":
                 bucket_path = str(pjs["state"]["maybe_public_bucket_video_path"])
-                content = self.get(f"https://cdn-2.fakeyou.com/{bucket_path}").content
+                content = self.get(f"https://cdn-2.fakeyou.com{bucket_path}").content
                 return W2Lo(pjs, content)
 
     def w2l(self, file: open, template_token: str):
