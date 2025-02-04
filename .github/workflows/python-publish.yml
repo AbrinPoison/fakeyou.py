@@ -23,7 +23,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install setuptools twine wheel
+        pip install setuptools twine wheel aiohttp
     - name: Build And Publish
       env:
         TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
