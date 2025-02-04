@@ -14,7 +14,7 @@ setup(
     description="Enhanced FAKEYOU.COM API Library",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/shards-7/fypy",
+    url="https://github.com/AbrinPoison/fakeyou.py",
     packages=find_packages(),
     install_requires=[
         "requests",
